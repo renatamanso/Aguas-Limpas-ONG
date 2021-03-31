@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Águas Limpas ONG</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Renata Manso"/>
+		<meta name="keywords" content="ONG, águas limpas, oceano sem lixo, dejetos em rios, rios limpos, organização não governamental, "/>
+		<meta name="description" content="Sacolão Econômico de frutas, verduras e hortaliças"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<header>
+			<img src="img/img-logodaong.jpeg" alt="banner da ONG Águas Limpas com sua logo de um pingo em volta de um simbolo da reciclagem e embaixo desenho de ondas, tudo na cor azul claro "/>
+		</header>
+		<nav>
+			<a class="a-menu" href="index.html">Sobre Nós</a>
+			<a class="a-menu" href="index.html#pag-causas">Nossas Causas</a>
+			<a class="a-menu" href="index.html#pag-news">Notícias</a>
+			<a class="a-menu" href="index.html#pag-educ">Educação Ambiental</a>
+			<a class="a-menu" href="#">Seja Voluntário</a>
+		</nav>
+
+		<section id="pag-cadastro">
+				<h1>Cadastre-se para ser voluntário</h1>
+
+				<p>Cadastre-se para ser voluntário na ONG Águas Limpas:</p>
+
+			<form name="" method="" action="">
+				<label for="nome">Nome: </label>
+				<input id="nome" type="text" name="nome_completo" placeholder="Nome Completo" required autofocus />
+
+				<label for="email">E-mail: </label>
+				<input id="email" type="email" name="email" placeholder="nomeusuario@gmail.com" required />
+
+				<label for="senha">Senha: </label>
+				<input id="senha" type="password" name="email" placeholder="somente números" required />
+
+				<label for="celular">Celular: </label>
+				<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\({?\d{2}\)\d{5}[-\s]\d{4}.*?$" required />
+
+			<div id="data-hora-num">
+				<div>
+						<label for="data">Data: </label>
+						<input id="data" type="date" name="data"/>
+				</div>
+				<div>
+						<label for="hora">Hora: </label>
+						<input id="hora" type="time" name="hora"/>
+				</div>
+				<div>
+						<label for="quantidade">Quantidade de trabalhos: </label>
+						<input id="quantidade" type="number" name="quantidade" min="1" max="20" step="1" />
+				</div>
+			</div>
+
+				<label for="experiencia">Já realizou trabalhos voluntários anteriormente?</label>
+				<select id="experiencia" name="experiencia">
+					<option value="">Selecione</option>
+					<option value="recentemente">Sim, fui voluntário recentemente</option>
+					<option value="ha muito tempo">Sim, fui voluntário há muito tempo atrás</option>
+					<option value="nunca">Não, nunca realizei trabalho voluntário antes</option>
+				</select>
+
+				<fieldset>
+					<legend>Sexo: </legend>
+					<input id="fem" type="radio" name="sexo" value="fem" /><label for="fem"> Feminino</label></br>
+					
+					<input id="masc" type="radio" name="sexo" value="masc" /><label for="masc"> Masculino</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Trabalhos de interesse: </legend>
+					
+					<input id="adm" type="checkbox" name="trabalho" value="adm"> <label for="adm"> Assistência administrativa </label></br>
+					
+					<input id="jornalismo" type="checkbox" name="trabalho" value="jornalismo"> <label for="jornalismo"> Assistência jornalística </label></br>
+					
+					<input id="pesquisa" type="checkbox" name="trabalho" value="pesquisa"> <label for="pesquisa"> Assistência de pesquisas ciêntificas </label></br>
+					
+					<input id="coleta" type="checkbox" name="trabalho" value="coleta"><label for="coleta"> Coleta de resíduos nas praias </label></br>
+					
+					<input id="educacao" type="checkbox" name="trabalho" value="educacao"> <label for="educacao"> Educação ambiental na comunidade </label></br>
+				</fieldset>
+
+				<label for="mensagem">Mensagem: </label>
+				<textarea id="mensagem" cols="48" rows="6">
+				</textarea>
+
+				<div id="botoes-form">
+					<input  type="submit" name="btn-enviar" value="Enviar" />
+					<input  type="reset" name="btn-cancelar" value="Cancelar"/> 
+				</div>
+
+			</form>
+		</section>
+		
+		<footer>
+			<p align="center"><strong>Desenvolvido por <a href="https://www.instagram.com/renatamanso_/" target="_blank">Renata Manso</a> - 2020</a></strong>
+			</p>
+		</footer>
+		
+	</body>
+</html>
